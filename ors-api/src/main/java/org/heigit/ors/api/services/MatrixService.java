@@ -11,10 +11,7 @@ import org.heigit.ors.matrix.MatrixErrorCodes;
 import org.heigit.ors.matrix.MatrixMetricsType;
 import org.heigit.ors.matrix.MatrixResult;
 import org.heigit.ors.matrix.MatrixSearchParameters;
-import org.heigit.ors.routing.APIEnums;
-import org.heigit.ors.routing.RoutingErrorCodes;
-import org.heigit.ors.routing.RoutingProfileManager;
-import org.heigit.ors.routing.RoutingProfileType;
+import org.heigit.ors.routing.*;
 import org.locationtech.jts.geom.Coordinate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -82,6 +79,7 @@ public class MatrixService extends ApiService {
         if (matrixRequest.hasMatrixOptions())
             coreRequest.setFlexibleMode(processMatrixRequestOptions(matrixRequest, params));
         coreRequest.setSearchParameters(params);
+        coreRequest.setWeightingMethod(WeightingMethod.SHORTEST);
         return coreRequest;
     }
 
