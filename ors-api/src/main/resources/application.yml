@@ -70,7 +70,7 @@ ors:
       attribution: openrouteservice.org, OpenStreetMap contributors
       maximum_routes: 2500
       maximum_routes_flexible: 25
-      maximum_visited_nodes: 100000
+      maximum_visited_nodes: 1000000
       maximum_search_radius: 2000
       u_turn_costs: -1
     isochrone:
