@@ -40,7 +40,7 @@ public class RoutingProfileCategory {
     }
 
     public static int getFromEncoder(EncodingManager encodingManager) {
-        if (encodingManager.hasEncoder(FlagEncoderNames.CAR_ORS) || encodingManager.hasEncoder(FlagEncoderNames.HEAVYVEHICLE))
+        if (encodingManager.hasEncoder(FlagEncoderNames.CAR_ORS) || encodingManager.hasEncoder(FlagEncoderNames.HEAVYVEHICLE) || encodingManager.hasEncoder(FlagEncoderNames.MAXIJETT_CAR))
             return RoutingProfileCategory.DRIVING;
 
         if (encodingManager.hasEncoder(FlagEncoderNames.BIKE_ORS) || encodingManager.hasEncoder(FlagEncoderNames.MTB_ORS) || encodingManager.hasEncoder(FlagEncoderNames.ROADBIKE_ORS)

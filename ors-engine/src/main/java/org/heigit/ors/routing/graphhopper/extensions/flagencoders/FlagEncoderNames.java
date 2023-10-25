@@ -31,6 +31,7 @@ public class FlagEncoderNames {
     public static final String GH_MTB = "mtb";
     public static final String GH_BIKE = "bike";
     public static final String GH_BIKE2 = "bike2";
+    public static final String MAXIJETT_CAR = "maxijett_car";
 
     private FlagEncoderNames() {
     }

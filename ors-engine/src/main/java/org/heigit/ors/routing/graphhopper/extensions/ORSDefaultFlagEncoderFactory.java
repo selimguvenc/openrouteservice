@@ -75,6 +75,9 @@ public class ORSDefaultFlagEncoderFactory extends DefaultFlagEncoderFactory impl
             case FlagEncoderNames.HIKING_ORS:
                 return new org.heigit.ors.routing.graphhopper.extensions.flagencoders.HikingFlagEncoder(configuration);
 
+            case FlagEncoderNames.MAXIJETT_CAR:
+                return new org.heigit.ors.routing.graphhopper.extensions.flagencoders.MaxiJettCarFlagEncoder(configuration);
+
             default:
                 // for all the types that DOES not match the ORS specific encoders we make
                 // use of the GH defaults - PLEASE note, that even if the GH defaults are

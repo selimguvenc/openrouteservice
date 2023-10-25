@@ -55,6 +55,7 @@ public class RoutingProfileType {
 
     public static final int GH_FOOT = 46;
     public static final int GH_HIKE = 47;
+    public static final int MAXIJETT_CAR = 48;
 
     private RoutingProfileType() {
     }
@@ -101,7 +102,8 @@ public class RoutingProfileType {
                 || routePref == GH_BIKE
                 || routePref == GH_BIKE2
                 || routePref == GH_BIKE_MTB
-                || routePref == GH_BIKE_ROAD;
+                || routePref == GH_BIKE_ROAD
+                   || routePref == MAXIJETT_CAR;
     }
 
     public static boolean supportMessages(int profileType) {
@@ -133,6 +135,7 @@ public class RoutingProfileType {
             case GH_BIKE_ROAD -> "gh-racingbike";
             case GH_FOOT -> "gh-foot";
             case GH_HIKE -> "gh-hike";
+            case MAXIJETT_CAR -> "maxijett-car";
             default -> "unknown";
         };
     }
@@ -163,6 +166,7 @@ public class RoutingProfileType {
             case "gh-racingbike" -> GH_BIKE_ROAD;
             case "gh-foot" -> GH_FOOT;
             case "gh-hike" -> GH_HIKE;
+            case "maxijett-car" -> MAXIJETT_CAR;
             default -> UNKNOWN;
         };
     }
@@ -191,6 +195,7 @@ public class RoutingProfileType {
             case RoutingProfileType.GH_FOOT -> FlagEncoderNames.GH_FOOT;
             case RoutingProfileType.GH_HIKE -> FlagEncoderNames.GH_HIKE;
             case RoutingProfileType.CYCLING_ELECTRIC -> FlagEncoderNames.BIKE_ELECTRO;
+            case RoutingProfileType.MAXIJETT_CAR -> FlagEncoderNames.MAXIJETT_CAR;
             default -> FlagEncoderNames.UNKNOWN;
         };
     }
