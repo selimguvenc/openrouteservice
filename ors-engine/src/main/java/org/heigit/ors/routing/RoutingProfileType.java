@@ -69,7 +69,8 @@ public class RoutingProfileType {
                 || routePref == DRIVING_CAROFFROAD
                 || routePref == DRIVING_TRAFFIC
                 || routePref == GH_CAR
-                || routePref == GH_CAR4WD;
+                || routePref == GH_CAR4WD
+                || routePref == MAXIJETT_CAR;
     }
 
     public static boolean isHeavyVehicle(int routePref) {
@@ -103,7 +104,7 @@ public class RoutingProfileType {
                 || routePref == GH_BIKE2
                 || routePref == GH_BIKE_MTB
                 || routePref == GH_BIKE_ROAD
-                   || routePref == MAXIJETT_CAR;
+                || routePref == MAXIJETT_CAR;
     }
 
     public static boolean supportMessages(int profileType) {
