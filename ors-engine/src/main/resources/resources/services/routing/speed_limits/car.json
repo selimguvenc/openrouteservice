@@ -1,9 +1,9 @@
 {
   "default": {
-    "motorway": 70,
-    "motorway_link": 70,
-    "motorroad": 70,
-    "trunk": 70,
+    "motorway": 100,
+    "motorway_link": 60,
+    "motorroad": 90,
+    "trunk": 85,
     "trunk_link": 60,
     "primary": 65,
     "primary_link": 50,
