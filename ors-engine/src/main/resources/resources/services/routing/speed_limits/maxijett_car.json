@@ -11,7 +11,7 @@
     "secondary_link": 50,
     "tertiary": 50,
     "tertiary_link": 40,
-    "unclassified": 40,
+    "unclassified": 30,
     "residential": 40,
     "living_street": 40,
     "service": 40,
