@@ -36,6 +36,7 @@ RELEASING:
 ## [Unreleased]
 ### Added
 - documentation for A* config parameters ([#1759](https://github.com/GIScience/openrouteservice/pull/1759))
+- keep-alive-timeout for spring internal tomcat ([#1780](https://github.com/GIScience/openrouteservice/pull/1780))
 - documentation for non-positive values of `maximum_grade_level` encoder config parameter ([#1775](https://github.com/GIScience/openrouteservice/pull/1775))
 
 ### Fixed
@@ -120,6 +121,10 @@ RELEASING:
 - fix fast-isochrones snapping ([#1572](https://github.com/GIScience/openrouteservice/pull/1572))
 - endpoint property 'isochrone' to 'isochrones' ([#1683](https://github.com/GIScience/openrouteservice/pull/1683))
 - correctly resolve access to ways with `hgv=delivery` tag ([#1748](https://github.com/GIScience/openrouteservice/pull/1748))
+
+## [7.1.1] - 2023-11-13
+### Changed
+- increase edge splitting threshold for generating isochrones ([#1508](https://github.com/GIScience/openrouteservice/pull/1508))
 
 ## [7.1.0] - 2023-06-13
 ### Added
