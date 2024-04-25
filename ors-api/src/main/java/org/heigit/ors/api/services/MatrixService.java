@@ -15,6 +15,7 @@ import org.heigit.ors.api.APIEnums;
 import org.heigit.ors.routing.RoutingErrorCodes;
 import org.heigit.ors.routing.RoutingProfileManager;
 import org.heigit.ors.routing.RoutingProfileType;
+import org.heigit.ors.routing.WeightingMethod;
 import org.locationtech.jts.geom.Coordinate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
