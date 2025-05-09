@@ -121,7 +121,7 @@ ors:
       cache_path: ./elevation_cache
     profile_default:
       enabled: false
-      elevation: true
+      elevation: false
       elevation_smoothing: false
       encoder_flags_size: 8
       instructions: true
@@ -221,7 +221,7 @@ ors:
       bike-regular:
         profile: cycling-regular
         encoder_options:
-          consider_elevation: true
+          consider_elevation: false
           turn_costs: true
           block_fords: false
         ext_storages:
@@ -232,7 +232,7 @@ ors:
       bike-mountain:
         profile: cycling-mountain
         encoder_options:
-          consider_elevation: true
+          consider_elevation: false
           turn_costs: true
           block_fords: false
         ext_storages:
@@ -243,7 +243,7 @@ ors:
       bike-road:
         profile: cycling-road
         encoder_options:
-          consider_elevation: true
+          consider_elevation: false
           turn_costs: true
           block_fords: false
         ext_storages:
@@ -254,7 +254,7 @@ ors:
       bike-electric:
         profile: cycling-electric
         encoder_options:
-          consider_elevation: true
+          consider_elevation: false
           turn_costs: true
           block_fords: false
         ext_storages:
@@ -295,6 +295,6 @@ ors:
         profile: public-transport
         encoder_options:
           block_fords: false
-        elevation: true
+        elevation: false
         maximum_visited_nodes: 1000000
         gtfs_file: ./src/test/files/vrn_gtfs_cut.zip
